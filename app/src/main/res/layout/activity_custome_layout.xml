@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_23sdp"
+        tools:context=".ui.login.view.LoginActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/startGuideLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/endGuideLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCardNumber"
+                    style="@style/textInputLayoutEditText"
+                    android:layout_width="@dimen/space0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+                    app:layout_constraintStart_toStartOf="@id/startGuideLine"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edCardNumber"
+                        style="@style/editText"
+                        android:hint="@string/card_number"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCamera"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_11sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/tilCardNumber"
+                    app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+                    app:layout_constraintStart_toEndOf="@id/tilCardNumber" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilExpireDate"
+                    style="@style/textInputLayoutEditText"
+                    android:layout_width="@dimen/space0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:maxLength="2"
+                    app:layout_constraintEnd_toStartOf="@id/tilExpiryYear"
+                    app:layout_constraintStart_toStartOf="@id/startGuideLine"
+                    app:layout_constraintTop_toBottomOf="@id/tilCardNumber">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edExpiryDate"
+                        style="@style/editText"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/expiry_month"
+                        android:inputType="number"
+                        android:maxLength="2" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_11sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/tilExpireDate"
+                    app:layout_constraintEnd_toStartOf="@id/tilExpiryYear"
+                    app:layout_constraintStart_toEndOf="@id/tilExpireDate"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilExpiryYear"
+                    style="@style/textInputLayoutEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:maxLength="2"
+                    app:layout_constraintEnd_toStartOf="@id/tilCVV"
+                    app:layout_constraintStart_toEndOf="@id/tilExpireDate"
+                    app:layout_constraintTop_toBottomOf="@id/tilCardNumber">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edExpiryYear"
+                        style="@style/editText"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/expiry_year"
+                        android:inputType="number"
+                        android:maxLength="4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_11sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/tilExpiryYear"
+                    app:layout_constraintEnd_toStartOf="@id/tilCVV"
+                    app:layout_constraintStart_toEndOf="@id/tilExpiryYear"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCVV"
+                    style="@style/textInputLayoutEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+                    app:layout_constraintStart_toEndOf="@id/tilExpiryYear"
+                    app:layout_constraintTop_toBottomOf="@id/tilCardNumber">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edCVV"
+                        style="@style/editText"
+                        android:hint="@string/cvv"
+                        android:inputType="numberPassword"
+                        android:maxLength="4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/chkSaveCards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+
+                    app:layout_constraintStart_toStartOf="@id/startGuideLine"
+                    app:layout_constraintTop_toBottomOf="@id/tilExpireDate" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSaveThisCard"
+                    android:layout_width="@dimen/space0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:alpha="0.4"
+                    android:text="@string/save_this_card"
+                    android:textColor="@color/colorBlack"
+                    app:layout_constraintBottom_toBottomOf="@id/chkSaveCards"
+                    app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+                    app:layout_constraintStart_toEndOf="@id/chkSaveCards"
+                    app:layout_constraintTop_toTopOf="@id/chkSaveCards" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPay"
+                    style="@style/roundButtonStyleWithAlphaBlue"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:enabled="false"
+                    android:text="@string/i_ll_pay_it"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/endGuideLine"
+                    app:layout_constraintStart_toStartOf="@+id/startGuideLine"
+                    app:layout_constraintTop_toBottomOf="@id/chkSaveCards"
+                    app:layout_constraintVertical_bias="0"
+                    tools:targetApi="lollipop" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

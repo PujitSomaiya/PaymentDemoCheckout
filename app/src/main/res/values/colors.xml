@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0b4984</color>
+    <color name="colorPrimaryDark">#0b4984</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="colorGreen">#008001</color>
+    <color name="colorGreen_006600">#006600</color>
+    <color name="green_98F899">#98F899</color>
+    <color name="colorBlue">#0b4986</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDarkGrey">#747474</color>
+    <color name="colorRed_E31010">#E31010</color>
+    <color name="colorWhite_BABCFF">#BABCFF</color>
+    <color name="color_white_7A82B1">#7A82B1</color>
+    <color name="colorLightGrey">#bbbbbb</color>
+    <color name="colorGrey_8E8E93">#8E8E93</color>
+    <color name="gray_f5f8fa_processing">#f5f8fa</color>
+    <color name="gray_6f716f_default">#6f716f</color>
+    <color name="gray_6f716f">#6f716f</color>
+    <color name="gray_fdf6f6_failure">#fdf6f6</color>
+    <color name="gray_f5faf5_success">#f5faf5</color>
+    <color name="colorLightRed">#f74140</color>
+    <color name="red_fbefef">#fbefef</color>
+    <color name="red_d22222">#d22222</color>
+    <color name="blue_dbe4ed">#dbe4ed</color>
+    <color name="gray_5a">#5a5a5a</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="gray_e4">#e4e4e4</color>
+
+    <color name="colorLightGreen">#94ffdc</color>
+    <color name="colorLightPink">#ffb8ae</color>
+    <color name="colorLightYellow">#ffd0a4</color>
+    <color name="colorLightBlue">#9fc9ef</color>
+    <color name="blue_270B4984">#270B4984</color>
+
+    <color name="gray_dbdee0">#dbdee0</color>
+    <color name="gray_b3000000">#b3000000</color>
+    <color name="gray_b3dddddd">#b3dddddd</color>
+    <color name="gray_f4f7f9">#f4f7f9</color>
+
+
+    <color name="colorSideDrawer">#383b3d</color>
+
+    <color name="colorDivider">#38000000</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="black_dim">#66000000</color>
+
+    <color name="brownish_grey">#636363</color>
+    <color name="twilight_blue">#0b4984</color>
+    <color name="tomato">#f52828</color>
+    <color name="color_light_node">#828282</color>
+    <color name="gray_dd">#dddddd</color>
+    <color name="gray_f3f3ff">#F3F3FF</color>
+
+
+    <color name="color_sug_failed">#fdf6f6</color>
+    <color name="color_sug_success">#dbdee0</color>
+    <color name="color_sug_processing">#0f000000</color>
+
+
+    <color name="blue_0a19ff">#0a19ff</color>
+    <color name="blue_0f2787">#0f2787</color>
+    <color name="blue_192864">#192864</color>
+    <color name="richBlue_0A19FF">#0A19FF</color>
+    <color name="darkBlue_0F2787">#0F2787</color>
+    <color name="lightBlue_192864">#192864</color>
+    <color name="gray_7F7F7F">#7F7F7F</color>
+    <color name="gray_EAEAEA">#EAEAEA</color>
+    <color name="gray_4F4F4F">#4F4F4F</color>
+    <color name="gray_EEEEEE">#EEEEEE</color>
+    <color name="white_FBFBFF">#FBFBFF</color>
+    <color name="white_F7F7FF">#F7F7FF</color>
+
+    <color name="orange_FF9000">#FF9000</color>
+    <color name="green_00B219">#00B219</color>
+    <color name="white_d8d8d8">#d8d8d8</color>
+    <color name="blue_b6bbff">#B6BBFF</color>
+    <color name="light_blue_F7F8FF">#F7F8FF</color>
+
+
+    <color name="bouncerCardPanColor" description="The text color of the card number displayed over the scan window">@android:color/white</color>
+    <color name="bouncerCardPanOutlineColor" description="The outline color of the card number displayed over the scan window">@android:color/black</color>
+
+    <color name="bouncerCardExpiryColor" description="The text color of the card expiry displayed over the scan window">@android:color/white</color>
+    <color name="bouncerCardExpiryOutlineColor" description="The outline color of the card expiry displayed over the scan window">@android:color/black</color>
+
+    <color name="bouncerEnterCardManuallyColorDark" description="The color of the Enter Card Manually text displayed at the bottom of the screen when the background is a dark color">@android:color/white</color>
+    <color name="bouncerEnterCardManuallyColorLight" description="The color of the Enter Card Manually text displayed at the bottom of the screen when the background is a light color">@android:color/black</color>
+    <color name="bouncerInstructionsColorDark" description="The color of the instructions text above the scan window when the background is a dark color">@android:color/white</color>
+    <color name="bouncerInstructionsColorLight" description="The color of the instructions text above the scan window when the background is a light color">@android:color/black</color>
+    <color name="bouncerSecurityColorDark" description="The color of the security notification shown below the scan window when the background is a dark color">@android:color/white</color>
+    <color name="bouncerSecurityColorLight" description="The color of the security notification shown below the scan window when the background is a light color">@android:color/black</color>
+
+    <color name="bouncerNotFoundBackground" description="The background color of the scan window when no card is visible">#DD222222</color>
+    <color name="bouncerFoundBackground" description="The background color of the scan window when a card has been found and the scan is started">#DD222222</color>
+    <color name="bouncerCorrectBackground" description="The background color of the scan window when a card has been found and the scan is completed">#DD222222</color>
+    <color name="bouncerWrongBackground" description="The background color of the scan window when a card has been found that does not match the required card">#DD222222</color>
+
+    <color name="bouncerNotFoundOutline" description="The outline color of the scan window when no card is visible">#FFFFFF</color>
+    <color name="bouncerFoundOutline" description="The outline color of the scan window when a card has been found and the scan is started">#1E90FF</color>
+    <color name="bouncerCorrectOutline" description="The outline color of the scan window when the scan has completed">#2ED573</color>
+    <color name="bouncerWrongOutline" description="The outline color of the scan window when a card has been found that does not match the required card">#FF2222</color>
+
+    <color name="bouncerCloseButtonDarkColor" description="The color of the close button when the background is a dark color">#FFFFFF</color>
+    <color name="bouncerFlashButtonDarkColor" description="The color of the torch button when the background is a dark color">#FFFFFF</color>
+    <color name="bouncerCloseButtonLightColor" description="The color of the close button when the background is a light color">#000000</color>
+    <color name="bouncerFlashButtonLightColor" description="The color of the torch button when the background is a light color">#000000</color>
+
+    <color name="bouncerDebugHighConfidence" description="When using debug mode, the color of boxes to draw around high confidence text">#00FF00</color>
+    <color name="bouncerDebugMediumConfidence" description="When using debug mode, the color of boxes to draw around medium confidence text">#DDDD00</color>
+    <color name="bouncerDebugLowConfidence" description="When using debug mode, the color of boxes to draw around low confidence text">#FF0000</color>
+    <color name="gray_8F8F8F">#8f8f8f</color>
+
+
+</resources>
